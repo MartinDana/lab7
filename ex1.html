@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: purple;
+}
+h1 {
+  color: #FF00FF;
+  text-align: center;
+}
+h2 { color:	#FF69B4;
+	
+	text-align: left;
+	}
+h3 { 
+	text-align: left;
+	color:	#9932CC;
+	border: 1px solid pink;
+	}
+table th , td {
+border: 1px solid black;
+margin: 25px 10px 70px 10px;
+background-color:pink;
+}
+img  {
+	display: block;
+  margin: left;
+  width: 50%;
+ width="104" height="142"
+  border-radius: 8px;
+   opacity: 0.5;
+   
+}
+p {
+	font-family: "Times New Roman", Times, serif;
+	color: 	#D19275 ;
+	}
+
+	
+</style>
+<script>
+function altceva()
+{
+document.getElementById("numeProfil").innerHTML= "Ing.Martin Dana-Andreea"
+var tabel = document.getElementByID("tabel");
+	tabel.rows[0].cells[0].innerHTML ="OSUT";
+	tabel.rows[0].cells[2].innerHTML ="lucrul in echipa";
+	tabel.rows[1].cells[0].innerHTML ="voluntariat";
+	tabel.rows[1].cells[2].innerHTML="lucru in echipa";
+	tabel.rows[2].cells[0].innerHTML="An IV";
+	tabel.rows[2].cells[2].innerHTML="proiect finalizat";
+
+document.getElementbyId("pozaProfil").src = "poza2.jpg";
+document.getElementById("pozaProfil").style.opacity = "0.9";
+document.getElementById("pozaProfil").style.border= "6px";
+document.body.style.backgroundColor = "grey";
+
+
+}
+
+</script>
+</head>
+<body>
+<h1>Fisa lab5</h1>
+<p> 
+<img id="pozaProfil"src="79134634_2480904885530409_2659745140423262208_o" >
+</p>
+<h2 id="numeProfil">Martin Dana-Andreea</h2>
+<p>Email:dana.andrea15@yahoo.com</p>
+<p> Tel:0040742432136</p>
+<p>"Educatia este ceea ce supravietuieste dupa ce tot ce a fost invatat a fost uitat". </p>
+<p> Burrhus Frederic Skinner</p>
+ 
+<table id="tabel">
+<tr>
+<td> info aplicata </td>
+<td>  <a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf>link</a> </td>
+</tr>
+<tr>
+  <td> Programare calculatoare</td> 
+  <td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3111.pdf>link</a> </td>
+</tr>
+<tr>
+<td>CCEP </td>  
+<td><a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf>link</a></td>
+</tr>
+</table>
+<h3>Hobby</h3>
+<p>-calatorii</p>
+<p>-muzica </p>
+<p>-design interior</p>
+<form>
+ <input type="button" value="alta viata" onclick="altceva()">
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>\
+<html>
+<body>
+<div class=slideshow-container>
+<div class="mySlides fade">
+ <img src="poza2">
+ <div class= "text"><a href="file:///C:/Users/marti/Desktop/info%20aplicata/lab6/ex2/IMG_4364.jpg">coleg1</a></div>
+ </div>
+ <div class="mySlides fade">
+ <img src="">
+ <dic class= "text"><a href="file:///C:/Users/marti/Desktop/info%20aplicata/lab6/ex2/Poza-page-001.jpg">coleg2</a></div>
+ </div>
+ <div class="mySlides fade">
+ <img src="">
+ <dic class= "text"><a href="file:///C:/Users/marti/Desktop/info%20aplicata/lab6/ex2/IMG_3607.jpg">coleg3</a></div>
+ </div>
+<h>Catalog colegi</h>
+<img src="imagine.jfif" >
+<p><a href=file:///C:/Users/marti/Desktop/lab6/ex2/eu.html>eu</a></p>
+<p><a href=file:///C:/Users/marti/Desktop/lab6/ex2/coleg1.html>coleg nr1</a></p>
+<p><a href=file:///C:/Users/marti/Desktop/lab6/ex2/coleg2.html>coleg nr2</a></p>
+<p><a href=file:///C:/Users/marti/Desktop/lab6/ex2/coleg3.html>coleg nr3</a></p>
+
+<link rel="stylesheet" type="text/css" herf="coperta_styles.css">
+<div class="mySlides fade" style="text-align:left">
+<img src="poza2.jpg">
+<div class="text"><a href="file:///C:/Users/marti/Desktop/info%20aplicata/lab6/ex2/IMG_4364.jpg">"Martin Dana-Andreea"</a></div>
+</div>
+<br>
+<div style="text-align:left">
+	<span class="dot"></span>
+	<span class="dot"></span">
+	<span class="dot"></span>
+</div>
+<script>
+var slideIndex= 0;
+showSlides();
+function showSlides() {
+var i;
+var slides= document.getElementsByClassName("mySlides");
+var dots= document.getElementsByClassName("dot");
+for (i= 0;i < slides.length; i++) {
+slides [i].style.dispaly="none";
+}
+slideIndex++;
+if (slideIndex > slide.length) {slideIndex=1}
+for (i=0; i< dots.length;i++) {
+dots[i].className=dots[i].className.replace(" active ","");
+}
+slides[slideIndex-1].style.display="block";
+dots[slideIndex-1].className += " active ";
+setTimeout(showSlides, 3000) ; //change image every 3 seconds
+}
+</script>
+</body>
+</html>
